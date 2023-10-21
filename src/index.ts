@@ -10,7 +10,7 @@ const renderer = new THREE.WebGLRenderer({canvas: document.querySelector('#root'
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 
-camera.position.z = 20;
+camera.position.z = 10;
 
 const geometry = new THREE.TorusGeometry(10, 3, 16, 50);
 const material = new THREE.MeshBasicMaterial( { color: 0x777777 , wireframe: true} );
