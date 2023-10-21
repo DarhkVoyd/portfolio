@@ -24,7 +24,7 @@ module.exports = {
 	},
 	plugins: [
 		new CopyWebpackPlugin({
-			patterns: ['./public/index.html', './public/styles.css'],
+			patterns: [{ from: './public', to: './' }],
 		}),
 	],
 };
