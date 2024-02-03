@@ -1,26 +1,29 @@
 {
-  "homepage": "https://www.darhkvoyd.me",
-  "name": "jigsaw",
-  "version": "1.0.0",
-  "description": "",
-  "private": true,
-  "scripts": {
-    "start": "webpack-dev-server --open",
-    "build": "webpack --config webpack.config.prod.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist" 
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/three": "^0.157.2",
-    "copy-webpack-plugin": "^11.0.0",
-    "gh-pages": "^6.0.0",
-    "three": "^0.157.0",
-    "ts-loader": "^9.5.0",
-    "typescript": "^5.2.2",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
-  }
+    "homepage": "https://www.darhkvoyd.me",
+    "name": "jigsaw",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "gray-matter": "^4.0.3",
+        "next": "14.1.0",
+        "react": "^18",
+        "react-dom": "^18",
+        "react-markdown": "^9.0.1",
+        "three": "^0.161.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "@types/three": "^0.161.2",
+        "eslint": "^8",
+        "eslint-config-next": "14.1.0",
+        "typescript": "^5"
+    }
 }
