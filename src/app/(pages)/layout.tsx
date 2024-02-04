@@ -1,14 +1,16 @@
-import Navbar from "@/components/Navbar/Navbar";
+import Navbar from '@/components/Navbar/Navbar';
+import Blur from '@/components/ui/blur';
 
 export default function Layout({
-    children,
+	children,
 }: Readonly<{
-    children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-    return (
-        <>
-            <Navbar/>
-            {children}
-        </>
-    );
+	return (
+		<div className="w-auto min-h-screen bg-background">
+			<Blur />
+			<Navbar />
+			{children}
+		</div>
+	);
 }

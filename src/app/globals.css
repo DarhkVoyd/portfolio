@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
-
 @layer base {
 	:root {
 		--background: 0 0% 100%;
@@ -39,10 +33,13 @@
 		--ring: 222.2 84% 4.9%;
 
 		--radius: 0.5rem;
+
+		--blog: 222.2 84% 4.9%;
 	}
 
 	.dark {
-		--background: 222.2 84% 4.9%;
+		--background: 0 0% 0%;
+		/* --background: 222.2 84% 4.9%; */
 		--foreground: 210 40% 98%;
 
 		--card: 222.2 84% 4.9%;
@@ -69,12 +66,17 @@
 		--border: 217.2 32.6% 17.5%;
 		--input: 217.2 32.6% 17.5%;
 		--ring: 212.7 26.8% 83.9%;
+
+		--blog: 216 12.2% 83.9%;
 	}
 }
 
 @layer base {
 	* {
 		@apply border-border;
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0;
 	}
 	body {
 		@apply bg-background text-foreground;
