@@ -61,6 +61,7 @@ export function getPostBySlug(postSlug: string): Blog.Post {
 	const markdown = fs.readFileSync(postPath, 'utf8');
 
 	const { data, content, excerpt } = matter(markdown, {
+		// @ts-ignore
 		excerpt: extractExcerpt,
 	});
 
