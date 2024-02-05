@@ -75,7 +75,7 @@ export function getPostBySlug(postSlug: string): Blog.Post {
 	return post;
 }
 
-export function getAllPosts(): Blog.Post[] {
+export function getAllPosts(): Promise<Blog.Post[]> {
 	const postDirectories = fs
 		.readdirSync(postsDirectory)
 		.filter((file) => file !== '.DS_Store');
@@ -84,5 +84,5 @@ export function getAllPosts(): Blog.Post[] {
 		.sort((postA, postB) =>
 			postA.frontMatter.date > postB.frontMatter.date ? -1 : 1
 		);
-	return allPosts;
+	return Promise.resolve(allPosts);
 }
