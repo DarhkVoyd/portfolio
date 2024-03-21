@@ -1,16 +1,21 @@
 'use client'
-import { useEffect, useRef } from 'react';
-import startExperience from './startAnimation';
-import styles from './ThreeExperience.module.css';
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import Torus from "./Torus";
 
 export default function ThreeExperience() {
-    const canvasRef = useRef<HTMLCanvasElement>(null);
-    useEffect(() => {
-        if (canvasRef.current) {
-            startExperience(canvasRef.current);
-        }
-    }, []);
-
-    return <canvas id={styles.webgl} ref={canvasRef}></canvas>;
+    return (
+        <div className="fixed top-0 left-0 outline-none h-screen w-screen">
+            <Canvas camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 0, 20] }}>
+                <OrbitControls
+                    enableDamping
+                    enablePan
+                    enableRotate
+                    enableZoom
+                />
+                <Torus />
+            </Canvas>
+        </div>
+    );
 }
 
