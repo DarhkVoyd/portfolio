@@ -14,9 +14,8 @@ export default function Home() {
 				>
 					Hi! I&apos;m DV
 				</h1>
-				<p>Note: Currently Under Construction!! Meanwhilte, </p>
 				<Link href="blog" className="underline text-base">
-					Check out my blog: Blog
+					Visit: Blog <br /><b> Note: Work in Progress, fake lorem ipsum </b>
 				</Link>
 			</div>
 		</>
