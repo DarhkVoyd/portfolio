@@ -69,7 +69,7 @@ This moment had been building up from the moment I saw that YouTube video. The c
 
 We all burst into happiness, screaming as this old goal was finally achieved. This might not be a big deal for many but it sure was a big moment for me and it has motivated me and I am more driven than ever. Now, I am excited for the future and making more plans.
 
-[Here](https://github.com/DarhkVoyd/JourneyOfCode/blob/9522ea03708ecc308d05e251e777784d3697b6ff/Programs/GSOC/GSoC%20Proposal%202024_%20JSON%20Schema%20-%20Build%20Data-Driven%20Tooling%20Page.pdf), you can find my accepted GSoC 2024 proposal for JSON Schema.
+[Here](/programs/gsoc/2024/GSoC%20Proposal%202024_%20JSON%20Schema%20-%20Build%20Data-Driven%20Tooling%20Page.pdf), you can find my accepted GSoC 2024 proposal for JSON Schema.
 
 ## Special Thanks
 
