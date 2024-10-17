@@ -12,7 +12,7 @@ SyntaxHighlighter.registerLanguage("ts", ts);
 SyntaxHighlighter.registerLanguage("rust", rust);
 
 export async function generateStaticParams() {
-  const postsPath = path.resolve(process.cwd(), "src", "posts");
+  const postsPath = path.resolve(process.cwd(), "posts");
   const postSlugs = fs
     .readdirSync(postsPath, { withFileTypes: true })
     .filter((dirent) => dirent.isDirectory())
