@@ -11,7 +11,7 @@ export default function Scene() {
   return (
     <Canvas
       shadows
-      camera={{ position: [4, 2, 5], fov: 75 }}
+      camera={{ position: [4.5, 2.5, 5.5], fov: 75 }}
       style={{ width: "100%", height: "100vh" }}
       flat={true}
       fallback={<div>Sorry no WebGL supported!</div>}
@@ -36,7 +36,11 @@ export default function Scene() {
       <Graves />
       <House />
       <Floor />
-      <OrbitControls />
+      <OrbitControls
+        maxDistance={20}
+        minDistance={5}
+        maxPolarAngle={Math.PI * 0.48}
+      />
       <Sky
         turbidity={10}
         rayleigh={3}
