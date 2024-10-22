@@ -54,7 +54,7 @@ const Galaxy = () => {
   }
 
   useFrame((state) => {
-    state.scene.rotation.y = state.clock.getElapsedTime();
+    state.scene.rotation.y = state.clock.getElapsedTime() * 0.2;
   });
 
   return (
@@ -95,7 +95,7 @@ const GalaxyScene = () => {
       flat={true}
     >
       <Galaxy />
-      <OrbitControls />
+      <OrbitControls maxDistance={25} minDistance={2} />
     </Canvas>
   );
 };
