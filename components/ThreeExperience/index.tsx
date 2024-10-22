@@ -95,7 +95,7 @@ const GalaxyScene = () => {
       flat={true}
     >
       <Galaxy />
-      <OrbitControls maxDistance={25} minDistance={2} />
+      <OrbitControls maxDistance={25} minDistance={2} enablePan={false} />
     </Canvas>
   );
 };
