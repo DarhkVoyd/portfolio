@@ -7,7 +7,7 @@ import * as THREE from "three";
 
 const Galaxy = () => {
   const parameters = {
-    count: 100000,
+    count: 300000,
     size: 0.001,
     radius: 12,
     branches: 3,
