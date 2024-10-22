@@ -14,7 +14,7 @@ export default function Home() {
         >
           Hi! I&apos;m DV
         </h1>
-        <Link href="blog" className="underline text-base">
+        <Link href="posts" className="underline text-base">
           Visit: Blog <br />
         </Link>
       </div>
