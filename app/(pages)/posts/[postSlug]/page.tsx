@@ -70,7 +70,9 @@ export default function Post({ params }: { params: { postSlug: string } }) {
             </h1>
             <p className="text-gray-400">Posted on {date}</p>
           </div>
-          <Markdown components={customRenderers}>{post.content}</Markdown>
+          <div className="text-justify">
+            <Markdown components={customRenderers}>{post.content}</Markdown>
+          </div>
         </article>
       </main>
     </div>
