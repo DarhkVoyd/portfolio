@@ -1,18 +1,7 @@
-"use client";
-
 import Image from "next/image";
-import { useTheme } from "next-themes";
 import { sponsorOptions } from "./sponsorOptions";
-import { useEffect, useState } from "react";
 
 const SponsorPage = () => {
-  const { resolvedTheme } = useTheme();
-  const [isDarkMode, setIsDarkMode] = useState(true);
-
-  useEffect(() => {
-    setIsDarkMode(resolvedTheme === "dark");
-  }, [resolvedTheme]);
-
   return (
     <div className="min-h-screen flex flex-col items-center p-8 bg-background text-foreground">
       <h1 className="text-3xl font-bold mb-4">Sponsor My Work 👋</h1>
@@ -24,9 +13,6 @@ const SponsorPage = () => {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
         {sponsorOptions.map((option) => {
-          const src = isDarkMode
-            ? option.logo
-            : `${option.logo.split(".")[0]}_light.${option.logo.split(".")[1]}`;
           return (
             <a
               key={option.name}
@@ -36,7 +22,7 @@ const SponsorPage = () => {
               className="grid grid-rows-subgrid row-span-2 p-4 text-center bg-card text-card-foreground rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
             >
               <Image
-                src={src}
+                src={option.logo}
                 alt={option.name}
                 className="place-self-center"
                 width={96}

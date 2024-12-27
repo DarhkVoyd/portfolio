@@ -2,6 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
+  images: {
+    unoptimized: true,
+  },
   transpilePackages: ["three"],
   webpack(config) {
     const fileLoaderRule = config.module.rules.find((rule) =>

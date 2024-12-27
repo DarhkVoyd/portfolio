@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <ThreeExperience />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center opacity-60">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center opacity-90">
         <h1
           className="text-8xl"
           style={{
@@ -14,8 +14,12 @@ export default function Home() {
         >
           Hi! I&apos;m DV
         </h1>
-        <Link href="posts" className="underline text-base">
-          Visit: Blog <br />
+        <Link
+          href="/posts"
+          className="m-2 p-2 rounded text-lg font-bold text-white"
+        >
+          Read Blog 📓
+          <br />
         </Link>
       </div>
     </>
